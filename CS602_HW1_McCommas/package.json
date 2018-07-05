@@ -1,0 +1,15 @@
+{
+  "name": "cs602_hw1_mccommas",
+  "version": "1.0.0",
+  "description": "node app",
+  "main": "employeeModule_v1.js",
+  "dependencies": {
+    "underscore": "^1.9.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "jeff mccommas",
+  "license": "ISC"
+}
