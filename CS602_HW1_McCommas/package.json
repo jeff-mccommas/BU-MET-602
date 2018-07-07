@@ -9,6 +9,7 @@
   "author": "jmccommas",
   "license": "ISC",
   "dependencies": {
+    "colors": "^1.3.0",
     "underscore": "^1.9.1"
   }
 }

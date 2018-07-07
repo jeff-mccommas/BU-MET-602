@@ -1,7 +1,7 @@
 const EventEmitter = require('events').EventEmitter;
 
-// Custom class 
-class Foo  extends EventEmitter {
+// Custom class
+class Foo extends EventEmitter {
 	constructor(args) {
 		super();
 		this.data = args;
@@ -21,7 +21,7 @@ Foo.prototype.test2 = function (args) {
 const foo = new Foo(100);
 
 foo.on('event1', function (args) {
-    console.log('Event raised!', 
+    console.log('Event raised!',
     	args, foo.data);
 });
 
