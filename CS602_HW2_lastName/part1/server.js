@@ -34,7 +34,11 @@ const server = net.createServer(
                 writeDataToSocket(employeeModule.addEmployee(receivedCommand[1], receivedCommand[2]).toString());
                 break;
             case "lookupById":
-                 writeDataToSocket(JSON.stringify(employeeModule.lookupByID(2)));
+                var response = employeeModule.lookupByID(parseInt(receivedCommand[1]));
+                if (!response) {
+                    response = "No Data Found!!";
+                }
+                 writeDataToSocket(JSON.stringify(response));
                 break;
             case "bye":
                 writeDataToSocket("Invalid request");
