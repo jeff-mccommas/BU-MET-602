@@ -1,0 +1,14 @@
+<div class="addemployeeform">
+    <h2>Edit Employee</h2>
+    <form method="POST" action="/editEmployee/{{id}}">
+     <div>
+    <label>First Name</label>
+    <input required type="text" name="firstName" value="{{data.firstName}}">
+    </div>   
+    <div>
+    <label>Last Name</label>
+    <input required type="text" name="lastName" value="{{data.lastName}}">
+    </div>
+    <input type="submit" value="Submit">
+    </form>
+</div>
